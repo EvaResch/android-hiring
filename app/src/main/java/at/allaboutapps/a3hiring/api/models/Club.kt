@@ -7,4 +7,5 @@ import kotlinx.android.parcel.Parcelize
 data class Club(val name: String,
                 val country: String,
                 val value: Long,
-                val image: String?) : Parcelable
+                val image: String?,
+                val european_titles: Int) : Parcelable

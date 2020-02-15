@@ -21,6 +21,8 @@ class ClubDetailActivity() : AppCompatActivity() {
         val infotext: String = this.resources.getString(R.string.infotext_1) + "  <b>" + club.name + "</b> " + this.resources.getString(R.string.infotext_2) + " " + club.country + " " + this.resources.getString(R.string.infotext_3) + " " + club.value + " " + this.resources.getString(R.string.value_entity) + " " + this.resources.getString(R.string.infotext_4) + "."
         this.contentView!!.findViewById<TextView>(R.id.club_info_text).text = HtmlCompat.fromHtml(infotext, HtmlCompat.FROM_HTML_MODE_LEGACY)
         this.contentView!!.findViewById<TextView>(R.id.club_country).text = club.country
+        val infotext2: String = club.name + " " + this.resources.getString(R.string.infotext_5) + " " + club.european_titles + " " + this.resources.getString(R.string.infotext_6)
+        this.contentView!!.findViewById<TextView>(R.id.club_titles).text = infotext2
 
         Glide.with(this)
                 .load(club.image)

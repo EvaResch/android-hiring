@@ -18,7 +18,7 @@ open class JsonFileReader(val url: String, val activity: MainActivity) {
         doAsync{
             jsonFile = URL(url).readText()
             val jsonArray = JSONArray(jsonFile)
-            clubList = MutableList(jsonArray.length() - 1){i -> Club(jsonArray.getJSONObject(i).getString("name"), jsonArray.getJSONObject(i).getString("country"), jsonArray.getJSONObject(i).getLong("value"), jsonArray.getJSONObject(i).getString("image"))}
+            clubList = MutableList(jsonArray.length() - 1){i -> Club(jsonArray.getJSONObject(i).getString("name"), jsonArray.getJSONObject(i).getString("country"), jsonArray.getJSONObject(i).getLong("value"), jsonArray.getJSONObject(i).getString("image"), jsonArray.getJSONObject(i).getInt("european_titles"))}
             clubList.sortBy {it.name}
             uiThread {
                 activity.list = clubList
