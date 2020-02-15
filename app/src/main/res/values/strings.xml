@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">all about clubs</string>
-    <string name="menu_sort">Sortierung</string>
+    <string name="menu_sort">Sorting</string>
+    <string name="value_entity">Millions</string>
+    <string name="infotext_1">The club</string>
+    <string name="infotext_2">from</string>
+    <string name="infotext_3">has a worth of</string>
+    <string name="infotext_4">euros</string>
 </resources>

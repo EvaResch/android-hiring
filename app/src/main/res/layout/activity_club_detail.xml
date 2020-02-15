@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/clubDetails"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundGrey"
+    tools:context="at.allaboutapps.a3hiring.ClubDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/club_image"
+            android:layout_width="match_parent"
+            android:background="#000000"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_height="250dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/club_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textSize="22sp"
+            android:textColor="@color/contrastTextColor"
+            android:layout_above="@id/club_info_text">
+        </TextView>
+
+        <TextView
+            android:id="@+id/club_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="@color/mainTextColor"
+            android:textSize="16sp"
+            android:layout_below="@+id/club_image">
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

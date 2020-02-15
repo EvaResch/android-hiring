@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">alles über clubs</string>
+    <string name="menu_sort">Sortierung</string>
+    <string name="value_entity">Millionen</string>
+    <string name="infotext_1">Der Club</string>
+    <string name="infotext_2">aus</string>
+    <string name="infotext_3">hat einen Wert von</string>
+    <string name="infotext_4">Euro</string>
+</resources>
